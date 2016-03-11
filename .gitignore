@@ -1,3 +1,6 @@
+# Shut VIM up
+*.swp
+
 # D3 example stuff that shouldn't even be here in the first place
 d3examples/
 curvedgraphfiles/
