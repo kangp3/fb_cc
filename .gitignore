@@ -1,0 +1,6 @@
+# D3 example stuff that shouldn't even be here in the first place
+d3examples/
+curvedgraphfiles/
+
+# Local user icon directory
+user_icons/
