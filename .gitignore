@@ -1,3 +1,6 @@
+# Real config.cfg file
+config/config.cfg
+
 # Shut VIM up
 *.swp
 
