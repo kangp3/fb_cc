@@ -6,10 +6,17 @@
 </head>
 <body>
   <script type="text/javascript" src="{{ url_for('static', filename='js/get_fb_info.js') }}"></script>
-  <script type="text/javascript">
-    getFbInfo({{ config['FB_APP_ID'] }});
-  </script>
   <script type="text/javascript" src="{{ url_for('static', filename='js/d3/d3.v3.min.js') }}"></script>
   <script type="text/javascript" src="{{ url_for('static', filename='js/force_graph.js') }}"></script>
+  <script type="text/javascript">
+    window.fbAsyncInit = function() { fbInit({{ config["FB_APP_ID"] }}) };
+  </script>
+
+  <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+  </fb:login-button>
+
+  <div id="status">
+  </div>  
+
 </body>
 </html>

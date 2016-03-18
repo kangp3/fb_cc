@@ -16,6 +16,7 @@ var svg = d3.select("body").append("svg")
 
 var defs = svg.append("defs");
 
+/*
 d3.json("/static/curvedgraphfiles/testfriends.json", function(error, graph) {
   if (error) throw error;
 
@@ -79,4 +80,5 @@ d3.json("/static/curvedgraphfiles/testfriends.json", function(error, graph) {
     });
   });
 });
+*/
 
