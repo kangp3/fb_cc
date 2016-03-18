@@ -74,8 +74,19 @@ function testAPI() {
     document.getElementById('status').innerHTML =
       'Thanks for logging in, ' + response.name + '!';
   });
+  FB.api("/me/friends", function(response) {
+    console.log(response);
+  });
 }
 
-function getFbInfo(app_id) {
-  console.log(app_id)
+function httpGetAsync(theUrl, callback)
+{
+  var xmlHttp = new XMLHttpRequest();
+  xmlHttp.onreadystatechange = function() { 
+    if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+      callback(xmlHttp.responseText);
+  }
+  xmlHttp.open("GET", theUrl, true); // true for asynchronous 
+  xmlHttp.send(null);
 }
+

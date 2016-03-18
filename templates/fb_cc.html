@@ -12,7 +12,7 @@
     window.fbAsyncInit = function() { fbInit({{ config["FB_APP_ID"] }}) };
   </script>
 
-  <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+  <fb:login-button scope="user_friends" onlogin="checkLoginState();">
   </fb:login-button>
 
   <div id="status">
